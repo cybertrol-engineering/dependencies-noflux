@@ -7,8 +7,8 @@ home: https://github.com/cybertrol-engineering/dependencies
 sources:
   - https://github.com/cybertrol-engineering/dependencies
 maintainers:
-  - name: alphabet5
-    url: https://github.com/alphabet5
+  - name: dstencil-cybertrol
+    url: https://github.com/dstencil-cybertrol
   - name: cybertrol-engineering
     url: https://github.com/cybertrol-engineering
 deprecated: false
