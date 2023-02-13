@@ -18,8 +18,8 @@ This helm chart requires being installed in two stages, as dependencies for some
 ## Installation
 
 ```bash
-helm repo add dependencies https://cybertrol-engineering.github.io/dependencies/
-helm upgrade --install dependencies dependencies/dependencies --namespace=kube-system --version "version to install"
+helm repo add dependencies https://cybertrol-engineering.github.io/dependencies-noflux/
+helm upgrade --install dependencies-noflux dependencies-noflux/dependencies-noflux --namespace=kube-system --version "version to install"
 ```
 
 ## Updating components
@@ -28,7 +28,7 @@ First update the versions in helm/dependencies/Chart.yaml and then run:
 
 ```bash
 helm repo update
-helm dependency update helm/dependencies
+helm dependency-noflux update helm/dependencies-noflux
 ```
 
 This will update the repos and then pull the charts matching the pinned versions.
