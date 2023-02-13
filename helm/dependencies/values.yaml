@@ -115,13 +115,6 @@ coredns:
   #   - name: forward
   #     parameters: . 192.0.2.2 192.0.2.3
 
-flux:
-  enabled: true
-  proxy:
-    enabled: false
-    server: "" # i.e. "http://proxy.example.com:3128"
-    noProxy: "100.64.0.0/16,100.65.0.0/16,127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,localhost,.cluster.local.,.cluster.local,.svc"
-
 ingress-nginx:
   enabled: false
   fullnameOverride: ingress-nginx
@@ -143,7 +136,7 @@ ingress-nginx:
     selector: "app.kubernetes.io/name: ingress-nginx"
 
 longhorn:
-  enabled: false
+  enabled: true
   namespaceOverride: "longhorn-system"
 
 metallb:
